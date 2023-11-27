@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.EditController">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="707.0" style="-fx-background-color: #fffaf0;" stylesheets="@style.css">
+         <children>
+            <Button fx:id="btn_back" layoutX="20.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #864500; -fx-border-color: black;" text="← Back" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font></Button>
+            <TableView fx:id="tb_reservation" layoutX="100.0" layoutY="73.0" prefHeight="183.0" prefWidth="530.0">
+              <columns>
+                <TableColumn fx:id="tb_id" prefWidth="43.199981689453125" text="ID" />
+                <TableColumn fx:id="tb_room" prefWidth="145.00001525878906" text="Room Name" />
+                  <TableColumn fx:id="tb_checkIn" prefWidth="108.60000610351562" text="Check-In Date" />
+                  <TableColumn fx:id="tb_checkOut" prefWidth="115.4000244140625" text="Check-Out Date" />
+                  <TableColumn fx:id="tb_customer" prefWidth="97.39996337890625" text="Customers" />
+              </columns>
+            </TableView>
+            <AnchorPane layoutX="-1.0" layoutY="282.0" prefHeight="168.0" prefWidth="707.0" style="-fx-background-color: #D2B48C;">
+               <children>
+                  <ChoiceBox fx:id="cb_reservations" layoutX="14.0" layoutY="69.0" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: eed8ae;" />
+                  <Label layoutX="32.0" layoutY="43.0" text="Reservations">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="223.0" layoutY="44.0" text="Services">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_quantity" layoutX="368.0" layoutY="68.0" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: eed8ae;" />
+                  <ChoiceBox fx:id="cb_services" layoutX="191.0" layoutY="69.0" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: eed8ae;" />
+                  <Label layoutX="400.0" layoutY="42.0" text="Quantity">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_addService" layoutX="191.0" layoutY="116.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" style="-fx-background-color: #8b475d; -fx-border-color: #8b475d;" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font></Button>
+                  <TableView fx:id="tb_service" layoutX="501.0" layoutY="10.0" prefHeight="118.0" prefWidth="192.0">
+                    <columns>
+                      <TableColumn fx:id="tb_serviceName" prefWidth="122.19998168945312" text="Services" />
+                      <TableColumn fx:id="tb_quantity" prefWidth="64.199951171875" text="Quantity" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btn_delete" layoutX="562.0" layoutY="130.0" mnemonicParsing="false" style="-fx-background-color: #dc2f30; -fx-border-color: black;" text="DELETE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="192.0" layoutY="1.0" text="ADD SERVICE" textFill="#864500">
+                     <font>
+                        <Font name="Calibri Bold" size="21.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="259.0" layoutY="51.0" text="You can change check-in and check-out dates" textFill="#864500">
+               <font>
+                  <Font name="Calibri Bold" size="10.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</HBox>

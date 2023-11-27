@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.BillController">
+   <children>
+      <AnchorPane prefHeight="458.0" prefWidth="400.0" style="-fx-background-color: #fffaf0;" stylesheets="@style.css">
+         <children>
+            <Label layoutX="145.0" layoutY="14.0" text="BILL DOCUMENT">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_date" layoutX="325.0" layoutY="42.0" text="Label" />
+            <Label layoutX="23.0" layoutY="60.0" text="Customer Information: ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_customerName" layoutX="165.0" layoutY="60.0" text="Label" />
+            <Label layoutX="120.0" layoutY="101.0" text="Product / Service Details">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tb_service" layoutX="43.0" layoutY="129.0" prefHeight="94.0" prefWidth="296.0">
+              <columns>
+                <TableColumn fx:id="tb_serviceName" prefWidth="129.19998168945312" text="SERVICE" />
+                <TableColumn fx:id="tb_quantity" prefWidth="81.20002746582031" text="QUANTITY" />
+                  <TableColumn fx:id="tb_servicePrice" prefWidth="81.20002746582031" text="PRICE" />
+              </columns>
+            </TableView>
+            <Label layoutX="113.0" layoutY="234.0" text="Total Cost of Services:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_servicePrice" layoutX="242.0" layoutY="234.0" text="Label" />
+            <Label layoutX="118.0" layoutY="262.0" text="Product / Service Details">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Line endX="250.60000610351562" layoutX="124.0" layoutY="87.0" startX="-100.0" />
+            <Line endX="250.60000610351562" layoutX="123.0" layoutY="251.0" startX="-100.0" />
+            <TableView fx:id="tb_room" layoutX="38.0" layoutY="281.0" prefHeight="86.0" prefWidth="320.0">
+               <columns>
+                  <TableColumn fx:id="tb_roomName" prefWidth="149.5999813079834" text="ROOM NAME" />
+                  <TableColumn fx:id="tb_roomPrice" prefWidth="57.60003662109375" text="PRICE" />
+                  <TableColumn fx:id="tb_day" prefWidth="106.60005187988281" text="LENGTH OF STAY" />
+               </columns>
+            </TableView>
+            <Label layoutX="115.0" layoutY="367.0" text="Total Cost of Rooms:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_totalRoom" layoutX="237.0" layoutY="367.0" text="Label" />
+            <Label layoutX="29.0" layoutY="418.0" text="Bill Total:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_billTotal" layoutX="89.0" layoutY="418.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

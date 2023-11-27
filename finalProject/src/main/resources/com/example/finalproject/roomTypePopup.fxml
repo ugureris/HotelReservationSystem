@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.RoomTypeController">
+   <children>
+      <AnchorPane prefHeight="457.0" prefWidth="400.0" style="-fx-background-color: #fffaf0;" stylesheets="@style.css">
+         <children>
+            <Label layoutX="126.0" layoutY="14.0" text="ADD ROOM TYPE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="171.0" layoutY="78.0" text="Room Type">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Label>
+            <TextField fx:id="tf_roomType" layoutX="132.0" layoutY="103.0" style="-fx-background-color: eed8ae;" />
+            <Button fx:id="btn_add" layoutX="180.0" layoutY="155.0" mnemonicParsing="false" style="-fx-background-color: #8b475d; -fx-border-color: #8b475d;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+            <TableView fx:id="tb_roomTypes" layoutX="107.0" layoutY="198.0" prefHeight="168.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="tb_roomName" prefWidth="182.99998474121094" text="Room Types" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn_delete" layoutX="173.0" layoutY="386.0" mnemonicParsing="false" style="-fx-background-color: #dc2f30; -fx-border-color: black;" text="DELETE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+         </children></AnchorPane>
+   </children>
+</VBox>

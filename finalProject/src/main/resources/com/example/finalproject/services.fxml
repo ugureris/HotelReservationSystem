@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ServicesController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #fffaf0;" stylesheets="@style.css">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="706.0" style="-fx-background-color: #aef1bc; -fx-border-color: #66b4bf;">
+               <children>
+                  <Button fx:id="btn_rooms" alignment="TOP_LEFT" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Rooms">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_features" alignment="TOP_LEFT" layoutX="119.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Features">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_services" alignment="TOP_LEFT" layoutX="224.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Services">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_customers" alignment="TOP_LEFT" layoutX="329.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Customers">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_home" alignment="TOP_RIGHT" layoutX="593.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Home">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+            <TableView fx:id="tb_services" layoutX="382.0" layoutY="90.0" prefHeight="238.0" prefWidth="277.0" style="-fx-table-cell-border-width: 1px; -fx-table-cell-border-color: black; -fx-background-color: transparent;">
+              <columns>
+                <TableColumn fx:id="tb_serviceName" prefWidth="162.20001220703125" text="SERVICE NAME" />
+                  <TableColumn fx:id="tb_unitPrice" prefWidth="95.20001220703125" text="UNIT PRICE" />
+              </columns>
+            </TableView>
+            <Label layoutX="192.0" layoutY="139.0" text="Service Name">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_serviceName" layoutX="162.0" layoutY="166.0" style="-fx-background-color: eed8ae;" />
+            <Button fx:id="btn_addService" layoutX="192.0" layoutY="319.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: #8b475d; -fx-border-color: #8b475d;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="btn_edit" layoutX="415.0" layoutY="361.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="80.0" style="-fx-background-color: #F08800; -fx-border-color: brown;" text="EDIT">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="btn_delete" layoutX="533.0" layoutY="361.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="80.0" style="-fx-background-color: #dc2f30; -fx-border-color: BLACK;" text="DELETE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="398.0" layoutY="70.0" text="To make the table editable, please press the edit button." textFill="#864500">
+               <font>
+                  <Font name="Calibri Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="207.0" layoutY="225.0" text="Unit Price">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_unitPrice" layoutX="162.0" layoutY="253.0" style="-fx-background-color: eed8ae;" />
+         </children></AnchorPane>
+   </children>
+</HBox>

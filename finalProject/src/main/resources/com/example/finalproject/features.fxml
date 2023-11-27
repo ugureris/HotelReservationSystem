@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.FeaturesController">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="705.0" style="-fx-background-color: #fffaf0;" stylesheets="@style.css">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="707.0" style="-fx-background-color: #aef1bc; -fx-border-color: #66b4bf;">
+               <children>
+                  <Button fx:id="btn_rooms" alignment="TOP_LEFT" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Rooms">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="119.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Features">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_services" alignment="TOP_LEFT" layoutX="225.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Services">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_customers" alignment="TOP_LEFT" layoutX="330.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Customers">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_home" alignment="TOP_RIGHT" layoutX="594.0" layoutY="9.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Home">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+            <Label layoutX="367.0" layoutY="57.0" text="Feature Name">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tb_extraFeatures" layoutX="367.0" layoutY="165.0" prefHeight="215.0" prefWidth="214.0">
+              <columns>
+                <TableColumn fx:id="tb_extraFeatureName" prefWidth="195.80001831054688" text="EXTRA FEATURES" />
+              </columns>
+            </TableView>
+            <TextField fx:id="tf_featureName" layoutX="471.0" layoutY="51.0" prefHeight="26.0" prefWidth="125.0" style="-fx-background-color: eee5de; -fx-border-color: grey;" />
+            <Button fx:id="btn_addFeature" layoutX="398.0" layoutY="93.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #8b475d; -fx-border-color: #8b475d;" text="ADD EXTRA FEATURE" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+            <AnchorPane layoutY="42.0" prefHeight="409.0" prefWidth="203.0" style="-fx-background-color: #c26000;">
+               <children>
+                  <Label layoutX="17.0" layoutY="107.0" text="FEATURES IN EVERY ROOM" textFill="#fff4ca">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="list_features" layoutX="-2.0" layoutY="146.0" prefHeight="128.0" prefWidth="207.0" style="-fx-background-color: #864500;" />
+               </children></AnchorPane>
+            <Button fx:id="btn_delete" layoutX="485.0" layoutY="392.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: #dc2f30; -fx-border-color: BLACK;" text="DELETE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_edit" layoutX="381.0" layoutY="392.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: #F08800; -fx-border-color: brown;" text="EDIT">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="353.0" layoutY="151.0" text="To make the table editable, please press the edit button." textFill="#864500">
+               <font>
+                  <Font name="Calibri Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

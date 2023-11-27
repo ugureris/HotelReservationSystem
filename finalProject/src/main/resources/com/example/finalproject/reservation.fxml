@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.NewReservationController">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #fffaf0;" stylesheets="@style.css">
+         <children>
+            <Button fx:id="btn_back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="74.0" style="-fx-background-color: #864500; -fx-border-color: black;" text="← Back" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font></Button>
+            <Label layoutX="51.0" layoutY="69.0" text="Check-In Date">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Label>
+            <DatePicker fx:id="dp_checkIn" layoutX="156.0" layoutY="64.0" prefHeight="26.0" prefWidth="122.0" />
+            <Label layoutX="37.0" layoutY="114.0" text="Check-Out Date">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dp_checkOut" layoutX="155.0" layoutY="109.0" prefHeight="26.0" prefWidth="122.0" />
+            <Label layoutX="36.0" layoutY="157.0" text="Available Rooms">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_reservation" layoutX="273.0" layoutY="210.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="174.0" style="-fx-background-color: #a5d8fc; -fx-border-color: #a5d8fc;" text="CREATE RESERVATION">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font></Button>
+            <ListView fx:id="list_extraFeatures" layoutX="532.0" layoutY="64.0" prefHeight="123.0" prefWidth="122.0" style="-fx-background-color: eed8ae;" />
+            <ChoiceBox fx:id="cb_rooms" layoutX="157.0" layoutY="152.0" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: eed8ae;" />
+            <Label layoutX="548.0" layoutY="41.0" text="Extra Features">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <ListView fx:id="list_features" layoutX="345.0" layoutY="64.0" prefHeight="123.0" prefWidth="122.0" style="-fx-background-color: #864500;" />
+            <Label layoutX="350.0" layoutY="40.0" prefHeight="18.0" prefWidth="122.0" text="Standard Features">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="286.0" prefHeight="168.0" prefWidth="706.0" style="-fx-background-color: #D2B48C;">
+               <children>
+                  <Label layoutX="410.0" layoutY="49.0" text="Customers">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="cb_customers" layoutX="493.0" layoutY="45.0" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: eed8ae;" />
+                  <Label layoutX="90.0" layoutY="50.0" text="Reserved Rooms">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="cb_reservedRooms" layoutX="209.0" layoutY="45.0" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: eed8ae;" />
+                  <Button fx:id="btn_addCustomer" layoutX="292.0" layoutY="102.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="122.0" style="-fx-background-color: #8b475d; -fx-border-color: #8b475d;" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="316.0" layoutY="7.0" text="ADD CUSTOMER" textFill="#864500f5">
+                     <font>
+                        <Font name="JetBrains Mono ExtraBold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.RoomsController">
+   <children>
+      <AnchorPane accessibleRole="COMBO_BOX" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #fffaf0;" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutX="-1.0" prefHeight="42.0" prefWidth="705.0" style="-fx-background-color: #aef1bc; -fx-border-color: #66b4bf;">
+               <children>
+                  <Button alignment="TOP_LEFT" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Rooms">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_features" alignment="TOP_LEFT" layoutX="120.0" layoutY="9.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Features">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_services" alignment="TOP_LEFT" layoutX="227.0" layoutY="9.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Services">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_customers" alignment="TOP_LEFT" layoutX="332.0" layoutY="9.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Customers">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_home" alignment="TOP_RIGHT" layoutX="593.0" layoutY="9.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: transparent; -fx-border-color: #66b4bf;" text="Home">
+                     <font>
+                        <Font name="Century" size="12.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+            <Label layoutX="37.0" layoutY="94.0" text="Room Type">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="cb_roomTypes" layoutX="121.0" layoutY="89.0" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: eed8ae;" />
+            <Label layoutX="14.0" layoutY="134.0" text="Room Number">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_roomNumber" layoutX="121.0" layoutY="129.0" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: eed8ae;">
+               <font>
+                  <Font size="10.0" />
+               </font></TextField>
+            <Label layoutX="272.0" layoutY="94.0" text="Capacity">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_capacity" layoutX="340.0" layoutY="89.0" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: eed8ae;">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Label layoutX="299.0" layoutY="134.0" text="Price">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_price" layoutX="340.0" layoutY="129.0" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: eed8ae;">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_add" layoutX="340.0" layoutY="175.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="88.0" style="-fx-background-color: #8b475d; -fx-border-color: #8b475d;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tb_rooms" layoutX="25.0" layoutY="239.0" prefHeight="146.0" prefWidth="683.0">
+              <columns>
+                <TableColumn fx:id="tb_roomName" prefWidth="143.79999160766602" text="ROOM NAME" />
+                  <TableColumn fx:id="tb_capacity" prefWidth="77.80001831054688" text="CAPACITY" />
+                  <TableColumn fx:id="tb_price" prefWidth="76.19996643066406" text="PRICE" />
+                  <TableColumn fx:id="tb_features" prefWidth="368.5999755859375" text="EXTRA FEATURES" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn_delete" layoutX="440.0" layoutY="396.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="88.0" style="-fx-background-color: #dc2f30; -fx-border-color: BLACK;" text="DELETE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Button>
+            <ListView fx:id="list_extraFeatures" layoutX="579.0" layoutY="82.0" prefHeight="119.0" prefWidth="120.0" style="-fx-background-color: eed8ae;" />
+            <Label layoutX="480.0" layoutY="102.0" text="Extra Features">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="464.0" layoutY="211.0" text="To make multiple selections, please press the CTRL key." textFill="#864500">
+               <font>
+                  <Font name="Calibri Bold" size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_edit" layoutX="170.0" layoutY="396.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="88.0" style="-fx-background-color: #F08800; -fx-border-color: BROWN;" text="EDIT">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="24.0" layoutY="218.0" text="To make the table editable, please press the edit button." textFill="#864500">
+               <font>
+                  <Font name="Calibri Bold" size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_addRoomType" layoutX="72.0" layoutY="52.0" mnemonicParsing="false" style="-fx-background-color: #8b475d; -fx-border-color: #8b475d;" text="Add Room Type" textFill="WHITE">
+               <font>
+                  <Font name="Century Schoolbook" size="14.0" />
+               </font></Button>
+         </children></AnchorPane>
+   </children>
+</HBox>
